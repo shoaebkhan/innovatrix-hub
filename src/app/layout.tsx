@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./custom-style.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* <div className="header">
+          <div className="sides">
+            <a href="#" className="logo">Innovatrix Hub</a>
+          </div>
+          <div className="sides"> 
+            <a href="#" className="menu"> </a>
+          </div>
+            <div className="info">
+              <h4><a href="#category">UI DESIGN</a></h4>
+              <h1>Innovrtrix Designs</h1>
+              <div className="meta">
+                  <a  href="https://twitter.com/nodws" target="_b" className="author"></a><br></br>
+                  By <a href="https://twitter.com/nodws" target="_b">ShoaebK</a> on April 26, 2024
+              </div>
+            </div>
+        </div> */}
+        {children}
+      </body>
     </html>
   );
 }
