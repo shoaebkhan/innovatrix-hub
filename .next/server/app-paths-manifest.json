@@ -1,1 +1,4 @@
-{}
+{
+  "/react-learning/page": "app/react-learning/page.js",
+  "/page": "app/page.js"
+}

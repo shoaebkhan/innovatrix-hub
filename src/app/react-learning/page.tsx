@@ -23,14 +23,17 @@ function reactLearning() {
                 <MyButton2/>    
             </div>
             <div>
-            <Image
+            {/* <Image
                 src={user.imagURL}
                 width={user.imageSize}
                 height={user.imageSize}
                 alt={"Picture of " + user.name}
-            />
-
-                <ABoutPage></ABoutPage>
+            /> */}
+            <p className='text-sm font-semibold'>Marks up JSX</p>
+                <ABoutPage/>
+                <div className='text-sm font-semibold'>
+                In React, you specify a CSS class with className. It works the same way as the HTML class attribute:
+                </div>
             </div>
             
     </div>
